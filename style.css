@@ -18,14 +18,19 @@ You will find this is far easier than the opposite task of using CSS to cram you
     box-sizing: border-box;
 }
 
-html, body, p {
+
+html, header,body, p {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
     align-items: center;
+    max-width: 720px;
+    text-align: left;
+    padding: 5px;
 }
+h1 {
+  font-size: 50px;
 
-
-
+}
 .container {
     max-width: 980px;
     margin: 0 auto;
@@ -48,13 +53,35 @@ html, body, p {
 img {
     display: block;
     width: 100%;
+
 }
+figcaption {
+  font-size: 12px;
+}
+
+button {
+    margin-left: 40px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+span {
+  position: relative;
+  font-size: 40px;
+}
+
+
 
 select {
     display: block;
     width: 100%;
 }
-* Customize the label (the container) */
+/* Customize the label (the container) */
 .container {
   display: block;
   position: relative;
@@ -66,6 +93,10 @@ select {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.checkboxBox{
+  margin-left: 35px;
 }
 
 /* Hide the browser's default checkbox */
@@ -134,5 +165,16 @@ select {
 }
 
 @media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+  html, header,body, p {
+      /* Sets default font-size to 16px, ensuring 1em = 16px; */
+      font-size: 16px;
+      align-items: center;
+      max-width: 720px;
+      text-align: left;
+      padding: 20px;
+
+
+  }
+
+  /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
 }
